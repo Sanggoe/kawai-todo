@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, TouchableOpacity, StyleSheet, Dimensions, TextInput } from "react-native";
+import PropTypes from "prop-types";
 
 const { width, height } = Dimensions.get("window");
 
@@ -99,8 +100,7 @@ const styles = StyleSheet.create({
     column: {
         flexDirection: "row",
         alignItems: "center",
-        width: width / 2,
-        justifyContent: "space-between"
+        width: width / 2
     },
     actions: {
         flexDirection: "row",
